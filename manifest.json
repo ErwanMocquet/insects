@@ -1,0 +1,21 @@
+{
+    "name": "Insects App",
+    "short_name": "Insects",
+    "description": "This app loves insects",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#D5B895",
+    "icons": [
+        {
+            "src": "icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "/insects/index.html"
+}

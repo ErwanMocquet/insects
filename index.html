@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PWA Insects page</title>
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <h1>Insects</h1>
+    <img src="butterflies.jpg" alt="butterflies">
+    <img src="butterfly.jpg" alt="butterfly">
+    <img src="dragonfly.jpg" alt="dragonfly">
+    <script>
+        // Asking the browser if it's support serviceWorker //
+        if('serviceWorker' in navigator) {
+            console.log('ServiceWorker is available')
+            navigator.serviceWorker.register("/insects/serviceworker.js")
+    }   else{
+            console.log('ServiceWorker is not available')
+    }
+    </script>
+</body>
+</html>
